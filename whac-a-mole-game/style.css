@@ -2,21 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #8cff8c;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
 }
 
 .grid{
-    height: 600px;
-    width: 606px;
+    height: 400px;
+    width: 406px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square{
-    height: 200px;
-    width: 200px;
+    height: 134px;
+    width: 120px;
     border: 1px solid black;
+    background-color: aliceblue;
 }
 
 .mole{
-    background-color: red;
+    background-color: rgb(255, 61, 168);
+}
+
+button{
+    background-color: #5b58ff;
+    border-radius: 10px;
+    padding: 10px;
+    font: bolder;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
 }
