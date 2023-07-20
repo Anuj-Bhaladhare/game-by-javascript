@@ -1,34 +1,33 @@
 const grid = document.querySelector(".grid");
 const blockWidth = 100;
-const blockHight = 20;
-
-
+const blockHeight = 20;
 
 // Creating A block
-class block {
+class Block {
     constructor(xAxis, yAxis) {
-        this.bottomLeft = [xAxis , yAxis];
+        this.bottomLeft = [xAxis, yAxis];
         this.bottomRight = [xAxis + blockWidth, yAxis];
-        this.topLeft = [xAxis, yAxis + blockHight];
-        this.topRight = [xAxis + blockWidth, yAxis + blockHight];
+        this.topLeft = [xAxis, yAxis - blockHeight];
+        this.topRight = [xAxis + blockWidth, yAxis - blockHeight];
     }
 }
 
-// My Block
-constblocks = [
-    new block(10, 270);
-]
+// My Blocks
+const blocks = [
+    new Block(10, 270)
+];
 
+console.log(blocks);
 
-// Drow my Block
-function addBlocks() {
-    for(let i = 0; i < block.length; i++) {
-        const block = document.createElement("div");
-        block.classList.add("block");
-        block.style.bottom = block[i].bottomLeft[0];
-        block.style.left = "100px";
-        grid.appendChild(block);
-    }
-}
+// Draw my Blocks
+// function addBlocks() {
+//     for (let i = 0; i < blocks.length; i++) {
+//         const block = document.createElement("div");
+//         block.classList.add("block");
+//         block.style.bottom = blocks[i].bottomLeft[1] + "px";
+//         block.style.left = blocks[i].bottomLeft[0] + "px";
+//         grid.appendChild(block);
+//     }
+// }
 
-addBlocks();
+// addBlocks();
