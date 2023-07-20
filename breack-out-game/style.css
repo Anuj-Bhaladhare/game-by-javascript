@@ -1,27 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
-
 .grid {
     position: absolute;
-    width: 600px;
+    width: 560px;
     height: 300px;
-    border: solid black 1px;
-}
-
-.block {
+    border: solid 1px black;
+    margin-top: 100px;
+  }
+  
+  .user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blueviolet;
+  }
+  
+  .block {
     position: absolute;
     width: 100px;
     height: 20px;
     background-color: blue;
-}    
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+  }
