@@ -7,7 +7,7 @@ const buttonSelect = document.querySelector("button");
 
 let result = 0;
 let hitPosition;
-let currentTime = 60;
+let currentTime = 4;
 
 function randamSqures() {
     squareAllBox.forEach(event => {
@@ -47,7 +47,9 @@ buttonSelect.addEventListener("click", () => {
         if(currentTime == 0) {
             clearInterval(countDownTimerId);
             alert("Game Over and Your Result is " + result);
-            currentTime = 60;
+            currentTime = 4;
+            result = 0;
+            scoreCard.innerText = result;
             // moveMole(false);
         }
     }

@@ -29,7 +29,9 @@
 }
 
 .mole{
-    background-color: rgb(255, 61, 168);
+    background-image: url("./mole.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button{
