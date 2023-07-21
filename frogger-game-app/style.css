@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid {
+    border: 1px solid black;
+    height: 270px;
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    height: 29px;
+    width: 29.5px;
+    display: flex;
+
+}
+
+.ending-block {
+    background-color: red;
+}
+.starting-block {
+    background-color: blue;
+}
+
+.log-left,
+.log-right{
+    background-color: lightblue;
+}  
+
+.car-left, 
+.car-right {
+    background-color: rgb(109, 100, 100);
+}
